@@ -19,5 +19,18 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "mobile-detect": "^1.3.6",
+    "moment": "^2.18.1",
+    "perfect-scrollbar": "^0.7.0",
+    "angular": "^1.6.5",
+    "angular-animate": "^1.6.5",
+    "angular-aria": "^1.6.5",
+    "angular-cookies": "^1.6.5",
+    "angular-messages": "^1.6.5",
+    "angular-resource": "^1.6.5",
+    "angular-sanitize": "^1.6.5"
+  }
 }
