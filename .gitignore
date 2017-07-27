@@ -57,3 +57,12 @@ typings/
 # dotenv environment variables file
 .env
 
+#Intellij
+**/*.iml
+**/.idea/
+
+#Framework specific
+**/.tmp/
+**/dist/
+**/node_modules/
+**/bower_components/
