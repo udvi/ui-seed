@@ -1,0 +1,25 @@
+{
+  "name": "ui-console",
+  "version": "1.0.0",
+  "description": "UI Console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udvi/ui-seed.git"
+  },
+  "keywords": [
+    "UI",
+    "Console",
+    "UTS"
+  ],
+  "author": "SURESH REDDY GUNTAKA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/udvi/ui-seed/issues"
+  },
+  "homepage": "https://github.com/udvi/ui-seed#readme"
+}

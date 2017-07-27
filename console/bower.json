@@ -1,0 +1,23 @@
+{
+  "name": "ui-console",
+  "description": "UI Console",
+  "main": "index.js",
+  "authors": [
+    "SURESH REDDY GUNTAKA"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "UI",
+    "Console",
+    "UTS"
+  ],
+  "homepage": "https://github.com/udvi/ui-seed",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
