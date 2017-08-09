@@ -1,0 +1,27 @@
+ui-splash-screen{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3c4252;
+  z-index: 99999;
+
+  .center {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.22);
+  }
+  .logo-text {
+    display: block;
+    margin: 0 auto;
+    font-size: 32px;
+    padding: 6px 12px;
+    color: #ffffff;
+    background-color: #039BE5;
+  }
+}

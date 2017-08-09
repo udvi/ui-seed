@@ -1,0 +1,10 @@
+<li>
+    <a title="{{vm.node.title}}">
+        <i class="{{vm.node.icon}}"></i>
+        <span class="flex">{{vm.node.title}}</span>
+        <span ng-if="(vm.node.children) && (vm.node.children.length > 0)"> <i class="lnr lnr-chevron-right"></i></span>
+    </a>
+    <ul class="sub-menu" ng-if="(vm.node.children) && (vm.node.children.length > 0)">
+        <ui-icon-nav-node ng-repeat="node1 in vm.node.children" node="node1"></ui-icon-nav-node>
+    </ul>
+</li>

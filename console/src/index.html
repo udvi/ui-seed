@@ -1,10 +1,11 @@
 <!doctype html>
-<html>
+<html ng-app="console">
     <head>
         <base href="/">
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
         <title>Console</title>
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -26,8 +27,16 @@
         your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <body>
-
+    <body ng-controller="IndexController as vm">
+        <ui-splash-screen>
+            <div class="center">
+                <md-progress-linear md-mode="query" class="md-accent"></md-progress-linear>
+                <div class="logo-text">
+                    UI CONSOLE
+                </div>
+            </div>
+        </ui-splash-screen>
+        <div class="animate-slide-up main-container" ui-view="main" layout="row"></div>
         <!-- build:js(src) scripts/vendor.js -->
         <!-- bower:js -->
         <!-- run `gulp inject` to automatically populate bower script dependencies -->

@@ -10,10 +10,10 @@ var angularTemplatecache = require('gulp-angular-templatecache')
 gulp.task('partials', function ()
 {
     return gulp.src([
-        path.join(conf.paths.src, '/core/**/*.html'),
-        path.join(conf.paths.src, '/app/**/*.html'),
-        path.join(conf.paths.tmp, '/serve/core/**/*.html'),
-        path.join(conf.paths.tmp, '/serve/app/**/*.html')
+        path.join(conf.paths.src, '/**/*.html'),
+        path.join(conf.paths.tmp, '/serve/**/*.html'),
+        '!' + path.join(conf.paths.src, '/*.html'),
+        '!' + path.join(conf.paths.src, '/serve/*.html')
     ])
         .pipe(htmlmin({
             collapseWhitespace: true,
@@ -21,8 +21,8 @@ gulp.task('partials', function ()
             removeComments    : true
         }))
         .pipe(angularTemplatecache('templateCacheHtml.js', {
-            module: 'templates',
-            root  : 'templates'
+            module: 'console',
+            root  : ''
         }))
         .pipe(gulp.dest(conf.paths.tmp + '/partials/'));
 });
