@@ -30,14 +30,14 @@
             templateUrl : 'core/directives/ui-icon-nav/templates/ui-icon-nav.tmpl.html',
             transclude : true,
             compile : function (element, attrs) {
-                console.log('Compile');
+                //console.log('Compile');
                 return {
                     pre : function preLink( $scope, element, attributes) {
                         $scope.data = attributes;
-                        console.log( attributes + ' (pre-link)'  );
+                        //console.log( attributes + ' (pre-link)'  );
                     },
                     post : function postLink($scope, element, attributes) {
-                        console.log( attributes + ' (post-link)'  );
+                        //console.log( attributes + ' (post-link)'  );
                     }
                 }
             }
@@ -64,13 +64,13 @@
             controller : 'UiIconNavNodeController as vm',
             templateUrl : 'core/directives/ui-icon-nav/templates/ui-icon-nav-node.tmpl.html',
             compile : function (element, attrs) {
-                console.log('Compile');
+                //console.log('Compile');
                 return {
                     pre : function preLink( $scope, element, attributes) {
-                        console.log( attributes + ' (pre-link)'  );
+                        //console.log( attributes + ' (pre-link)'  );
                     },
                     post : function postLink($scope, element, attributes) {
-                        console.log( attributes + ' (post-link)'  );
+                        //console.log( attributes + ' (post-link)'  );
                     }
                 }
             }

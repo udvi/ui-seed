@@ -1,0 +1,59 @@
+<md-content class="login-page" layout="column" flex="" md-colors="{'background-color': 'indigo'}" >
+    <section  flex layout="row" layout-align="center center" layout-wrap="">
+        <h1 flex="100" class="page-title">UI CONSOLE </h1>
+        <md-tabs md-dynamic-height="" md-border-bottom class="md-whiteframe-z5 tabs" flex="30">
+            <md-tab label="Login">
+                <md-content class="md-padding">
+                    <form name="loginForm" ng-submit="vm.login()">
+                        <div layout="column">
+                            <md-input-container>
+                                <label>USERNAME</label>
+                                <input required name="username" ng-model="vm.loginRequest.username">
+                                <div ng-messages="loginForm.username.$error">
+                                    <div ng-message="required">Username is required.</div>
+                                </div>
+                            </md-input-container>
+                            <md-input-container>
+                                <label>PASSWORD</label>
+                                <input type="password" required name="password" ng-model="vm.loginRequest.password">
+                                <div ng-messages="loginForm.password.$error">
+                                    <div ng-message="required">Password is required.</div>
+                                </div>
+                            </md-input-container>
+                            <div layout="row" layout-align="center center">
+                                <md-input-container>
+                                    <md-switch class="md-primary" name="rememberme" ng-model="vm.loginRequest.rememberme">
+                                        Enable remember me
+                                    </md-switch>
+                                </md-input-container>
+                                <span flex=""></span>
+                                <md-button class="md-raised md-primary" type="submit" ng-disabled="!loginForm.$valid">LOGIN</md-button>
+                            </div>
+
+                        </div>
+                    </form>
+                </md-content>
+            </md-tab>
+            <md-tab label="Reset Password">
+                <md-content class="md-padding">
+                    <form name="resetPasswordForm" ng-submit="vm.resetPassword()">
+                        <div layout="column">
+                            <md-input-container>
+                                <label>EMAIL</label>
+                                <input required name="email" ng-model="vm.resetPassword.username">
+                                <div ng-messages="resetPasswordForm.email.$error">
+                                    <div ng-message="required">Email is required.</div>
+                                </div>
+                            </md-input-container>
+                            <div layout="row" layout-align="center center">
+                                <span flex=""></span>
+                                <md-button class="md-raised md-primary" type="submit" ng-disabled="!resetPasswordForm.$valid">RESET PASSWORD</md-button>
+                            </div>
+
+                        </div>
+                    </form>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </section>
+</md-content>

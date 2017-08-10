@@ -9,12 +9,6 @@
     /** @ngInject */
     function config(uiNavigationServiceProvider)
     {
-        uiNavigationServiceProvider.register('console', {
-            title : 'SAMPLE',
-            icon : 'lnr lnr-home',
-            group : true,
-            weight : 1
-        });
 
         uiNavigationServiceProvider.register('dashboard', {
             title : 'DASHBOARD',
@@ -22,31 +16,48 @@
             weight : 1
         });
 
-        uiNavigationServiceProvider.register('dashboard1', {
-            title : 'DASHBOARD1',
-            icon : 'lnr lnr-apartment',
-            weight : 1
+        uiNavigationServiceProvider.register('gameplay', {
+            title : 'GAMEPLAY',
+            icon : 'lnr lnr-list',
+            weight : 2
         });
-        uiNavigationServiceProvider.register('dashboard1.test1', {
-            title : 'TEST 1',
-            icon : 'lnr lnr-apartment',
-            weight : 1
+
+        uiNavigationServiceProvider.register('games', {
+            title : 'GAMES',
+            icon : 'lnr lnr-dice',
+            weight : 3
         });
-        uiNavigationServiceProvider.register('dashboard1.test1.test', {
-            title : 'TEST',
-            icon : 'lnr lnr-apartment',
-            weight : 1
+
+        uiNavigationServiceProvider.register('specials', {
+            title : 'SPECIALS',
+            icon : 'lnr lnr-magic-wand',
+            weight : 4
         });
-        uiNavigationServiceProvider.register('dashboard1.test2.test.test123.test234', {
-            title : 'TEST',
-            icon : 'lnr lnr-apartment',
-            weight : 1
+
+        uiNavigationServiceProvider.register('analytics', {
+            title : 'ANALYTICS',
+            icon : 'lnr lnr-chart-bars',
+            weight : 5
         });
-        uiNavigationServiceProvider.register('dashboard1.test2', {
-            title : 'TEST 2',
-            icon : 'lnr lnr-apartment',
-            weight : 1
+
+        uiNavigationServiceProvider.register('partners', {
+            title : 'PARTNERS',
+            icon : 'lnr lnr-earth',
+            weight : 6
         });
+
+        uiNavigationServiceProvider.register('organizations', {
+            title : 'ORGANIZATIONS',
+            icon : 'lnr lnr-apartment',
+            weight : 7
+        });
+
+        uiNavigationServiceProvider.register('settings', {
+            title : 'SETTINGS',
+            icon : 'lnr lnr-cog',
+            weight : 8
+        });
+
     }
 
 })();

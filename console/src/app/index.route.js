@@ -11,7 +11,7 @@
 
         $locationProvider.html5Mode(true);
 
-        $urlRouterProvider.otherwise('/console/dashboard');
+        $urlRouterProvider.otherwise('/console/login');
 
         $stateProvider
             .state('console', {
@@ -30,6 +30,15 @@
             })
             .state('console.dashboard', {
                 url : '/dashboard'
+            })
+            .state('console.login', {
+                url : '/login',
+                views : {
+                    'page@console' : {
+                        templateUrl : 'core/views/login/login.html',
+                        controller : 'LoginController as vm'
+                    }
+                }
             })
 
     }
